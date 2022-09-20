@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0%, 20%);
+}
+main {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 18px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 16px 16px 8px hsl(214, 51%, 8%);
+  align-items: center;
+  padding: 1.5%;
+  font-family: "Outfit", sans-serif;
+}
+#cube {
+  width: 100%;
+  border-radius: 13px;
+}
+#img-holder {
+  position: relative;
+  display: grid;
+}
+#view {
+  position: absolute;
+  place-self: center;
+  padding: clamp(40%, 41.5%, 43%);
+  border-radius: 13px;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  z-index: 3;
+  visibility: hidden;
+}
+#img-holder:hover #view {
+  visibility: visible;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+h1 {
+  font-size: 113%;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  margin-top: 5%;
+}
+h1:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+  transition: 0.3s ease-in;
+}
+p {
+  font-size: 103%;
+  /* margin-top: 5%; */
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+.nicetext {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 0.3px hsl(215, 32%, 27%);
+  padding-bottom: 8%;
+}
+#ether-ammount {
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+}
+.creator {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  height: 2rem;
+  width: 100%;
+}
+.profile_image_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile_image {
+  height: 2rem;
+  width: 2rem;
+  border: solid 0.3px hsl(0, 0%, 100%);
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+#creator {
+  color: hsl(0, 0%, 100%);
+}
+#creator:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+  transition: 0.3s ease-in;
+}
+@media screen and (max-width: 1108px) {
+  main {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 876px) {
+  main {
+    width: 35%;
+    padding: 3%;
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 630px) {
+  main {
+    width: 55%;
+    padding: 4%;
+    box-shadow: none;
+  }
+}
+@media screen and (max-width: 459px) {
+  main {
+    width: 80%;
+    padding: 5%;
+    box-shadow: none;
+  }
+}
