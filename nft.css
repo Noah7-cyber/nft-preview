@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translate(0%, 20%);
+  min-height: 100vh;
 }
 main {
   background-color: hsl(216, 50%, 16%);
@@ -17,7 +17,7 @@ main {
   width: 25%;
   display: flex;
   flex-direction: column;
-  box-shadow: 16px 16px 8px hsl(214, 51%, 8%);
+  box-shadow: 10px 20px 30px 30px hsl(214, 51%, 8%);
   align-items: center;
   padding: 1.5%;
   font-family: "Outfit", sans-serif;
@@ -30,6 +30,7 @@ main {
   position: relative;
   display: grid;
 }
+
 #view {
   position: absolute;
   place-self: center;
@@ -66,6 +67,9 @@ p {
   justify-content: space-between;
   border-bottom: solid 0.3px hsl(215, 32%, 27%);
   padding-bottom: 8%;
+}
+.yo{
+    margin-top: 1.5rem;
 }
 #ether-ammount {
   color: hsl(178, 100%, 50%);
